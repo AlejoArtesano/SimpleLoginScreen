@@ -63,6 +63,13 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrellacorp" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-aj-rwt">
+                                <rect key="frame" x="122.5" y="95" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Efg-3b-JpC"/>
+                                    <constraint firstAttribute="height" constant="130" id="H4C-uS-2dG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1033763661980629" green="0.60902023315429688" blue="0.77111941576004028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -74,7 +81,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hEf-po-E4o" secondAttribute="bottom" constant="10" id="aWU-Hu-xF0"/>
                             <constraint firstItem="Tgd-W0-P4r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="hKz-AL-rna"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEf-po-E4o" secondAttribute="trailing" constant="84" id="onb-N2-d32"/>
+                            <constraint firstItem="Fhd-aj-rwt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="qzf-ZN-TY8"/>
                             <constraint firstItem="hEf-po-E4o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="vla-28-Hzg"/>
+                            <constraint firstItem="Fhd-aj-rwt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zRB-if-hyO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -84,4 +93,7 @@
             <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="umbrellacorp" width="238" height="212"/>
+    </resources>
 </document>
