@@ -62,6 +62,9 @@
                                 <state key="normal" title="Don't have an account? Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AWb-lR-m8f" kind="show" id="V2V-D5-CcP"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrellacorp" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-aj-rwt">
                                 <rect key="frame" x="122.5" y="95" width="130" height="130"/>
@@ -116,15 +119,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZk-89-Idf">
-                                <rect key="frame" x="157.5" y="23" width="60.5" height="20.5"/>
+                                <rect key="frame" x="157.5" y="33" width="60.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-GU-JFl">
-                                <rect key="frame" x="16" y="27" width="34" height="13"/>
+                                <rect key="frame" x="16" y="37" width="32" height="13"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="34" id="7fV-OC-W3N"/>
                                     <constraint firstAttribute="height" constant="13" id="LIw-Lq-3F7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -133,7 +135,7 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nNF-hu-HF7">
-                                <rect key="frame" x="35" y="93.5" width="305" height="250"/>
+                                <rect key="frame" x="35" y="113.5" width="305" height="250"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYi-rj-VGU">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="30"/>
@@ -175,11 +177,12 @@
                         <constraints>
                             <constraint firstItem="ENr-GU-JFl" firstAttribute="leading" secondItem="UmZ-ah-ray" secondAttribute="leading" constant="16" id="6wS-mT-OLV"/>
                             <constraint firstItem="nNF-hu-HF7" firstAttribute="leading" secondItem="UmZ-ah-ray" secondAttribute="leading" constant="35" id="8VK-dx-DGT"/>
-                            <constraint firstItem="PZk-89-Idf" firstAttribute="top" secondItem="UmZ-ah-ray" secondAttribute="top" constant="3" id="JaV-JJ-1yl"/>
-                            <constraint firstItem="nNF-hu-HF7" firstAttribute="top" secondItem="PZk-89-Idf" secondAttribute="bottom" constant="50" id="KOs-lm-jx3"/>
+                            <constraint firstItem="PZk-89-Idf" firstAttribute="top" secondItem="UmZ-ah-ray" secondAttribute="top" constant="13" id="JaV-JJ-1yl"/>
+                            <constraint firstItem="nNF-hu-HF7" firstAttribute="top" secondItem="PZk-89-Idf" secondAttribute="bottom" constant="60" id="KOs-lm-jx3"/>
                             <constraint firstItem="UmZ-ah-ray" firstAttribute="trailing" secondItem="nNF-hu-HF7" secondAttribute="trailing" constant="35" id="heC-fV-lhO"/>
-                            <constraint firstItem="ENr-GU-JFl" firstAttribute="top" secondItem="UmZ-ah-ray" secondAttribute="top" constant="7" id="pfT-P2-DS5"/>
+                            <constraint firstItem="ENr-GU-JFl" firstAttribute="top" secondItem="UmZ-ah-ray" secondAttribute="top" constant="17" id="pfT-P2-DS5"/>
                             <constraint firstItem="PZk-89-Idf" firstAttribute="centerX" secondItem="rGW-lZ-qfC" secondAttribute="centerX" id="ssn-JK-lmC"/>
+                            <constraint firstItem="PZk-89-Idf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ENr-GU-JFl" secondAttribute="trailing" constant="8" symbolic="YES" id="wHh-Fx-ljB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UmZ-ah-ray"/>
                     </view>
