@@ -57,6 +57,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="signinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMG-vv-LmC"/>
                                             <segue destination="dcQ-5p-l2e" kind="show" identifier="welcomSegue" id="WGU-p6-OXe"/>
                                         </connections>
                                     </button>
@@ -108,6 +109,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="SignInButtonPressed" destination="BI7-pG-Mx1" id="9XR-bo-Vll"/>
+                        <outlet property="passwordTextField" destination="9t5-xG-R3l" id="N3t-tf-NBA"/>
                         <outlet property="usernameTextField" destination="MEa-I1-I7O" id="rEF-Nf-vZ3"/>
                     </connections>
                 </viewController>
@@ -375,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMg-LV-4nG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="53"/>
+            <point key="canvasLocation" x="1686" y="51"/>
         </scene>
     </scenes>
     <resources>
@@ -383,6 +386,6 @@
         <image name="umbrellacorp" width="238" height="212"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GRj-eI-6bJ"/>
+        <segue reference="WGU-p6-OXe"/>
     </inferredMetricsTieBreakers>
 </document>

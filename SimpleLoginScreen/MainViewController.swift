@@ -12,11 +12,21 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    @IBOutlet weak var SignInButtonPressed: UIButton!
+    
+    
     @IBAction func UnwindFromVC(unwindSegue: UIStoryboardSegue) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SignInButtonPressed?.isEnabled = false
+        //SignInButtonPressed?.alpha = 0.5
+        
     }
     
     // Only segue to WelcomeViewController has identifier
