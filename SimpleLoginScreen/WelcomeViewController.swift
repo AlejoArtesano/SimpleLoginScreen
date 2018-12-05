@@ -10,15 +10,14 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    
     var text: String!
+    
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.nameLabel!.text = text
     }
-    
     
 }
