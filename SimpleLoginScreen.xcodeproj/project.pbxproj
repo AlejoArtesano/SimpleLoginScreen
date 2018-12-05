@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B49D49021B83919005AE08B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49D48F21B83919005AE08B /* WelcomeViewController.swift */; };
 		5BC8124A21B57B4500440F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8124921B57B4500440F27 /* AppDelegate.swift */; };
 		5BC8124C21B57B4500440F27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8124B21B57B4500440F27 /* ViewController.swift */; };
 		5BC8124F21B57B4500440F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC8124D21B57B4500440F27 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B49D48F21B83919005AE08B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5BC8124621B57B4500440F27 /* SimpleLoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC8124921B57B4500440F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC8124B21B57B4500440F27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				5BC8124921B57B4500440F27 /* AppDelegate.swift */,
 				5BC8124B21B57B4500440F27 /* ViewController.swift */,
 				5BC8124D21B57B4500440F27 /* Main.storyboard */,
+				5B49D48F21B83919005AE08B /* WelcomeViewController.swift */,
 				5BC8125021B57B4700440F27 /* Assets.xcassets */,
 				5BC8125221B57B4700440F27 /* LaunchScreen.storyboard */,
 				5BC8125521B57B4700440F27 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B49D49021B83919005AE08B /* WelcomeViewController.swift in Sources */,
 				5BC8124C21B57B4500440F27 /* ViewController.swift in Sources */,
 				5BC8124A21B57B4500440F27 /* AppDelegate.swift in Sources */,
 			);

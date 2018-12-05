@@ -56,6 +56,9 @@
                                         <state key="normal" title="SIGN IN">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="dcQ-5p-l2e" kind="show" id="WGU-p6-OXe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -104,6 +107,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="usernameTextField" destination="MEa-I1-I7O" id="rEF-Nf-vZ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,7 +210,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0v-Dr-kmW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nz9-Vu-dO3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="828.75" y="-284.15492957746477"/>
+            <point key="canvasLocation" x="870" y="-305"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QFS-Fu-Guk">
@@ -304,12 +310,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qu-8h-TkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="I4y-VI-8zy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="828.75" y="389.78873239436621"/>
+            <point key="canvasLocation" x="870" y="416"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tZY-wK-Ecs">
             <objects>
-                <viewController id="dcQ-5p-l2e" sceneMemberID="viewController">
+                <viewController id="dcQ-5p-l2e" customClass="WelcomeViewController" customModule="SimpleLoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8uI-Wl-kgM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,32 +333,43 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Umbrella" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d31-sI-QgE">
-                                <rect key="frame" x="78" y="36" width="164" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Umbrella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d31-sI-QgE">
+                                <rect key="frame" x="16" y="45" width="288" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4vY-N1-YFv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-cU-zIN">
-                                <rect key="frame" x="139" y="77" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-cU-zIN">
+                                <rect key="frame" x="16" y="96" width="288" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="sfS-FU-6WD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="d31-sI-QgE" firstAttribute="centerX" secondItem="8uI-Wl-kgM" secondAttribute="centerX" id="CKP-kb-lcD"/>
-                            <constraint firstItem="hnL-cU-zIN" firstAttribute="centerX" secondItem="8uI-Wl-kgM" secondAttribute="centerX" id="Mw5-8K-056"/>
-                            <constraint firstItem="d31-sI-QgE" firstAttribute="top" secondItem="YY5-nm-ag7" secondAttribute="top" constant="16" id="dmt-Yi-JaY"/>
-                            <constraint firstItem="hnL-cU-zIN" firstAttribute="top" secondItem="d31-sI-QgE" secondAttribute="bottom" constant="20" id="j7S-Ta-V89"/>
+                            <constraint firstItem="YY5-nm-ag7" firstAttribute="trailing" secondItem="hnL-cU-zIN" secondAttribute="trailing" constant="16" id="GVv-4m-0yb"/>
+                            <constraint firstItem="d31-sI-QgE" firstAttribute="leading" secondItem="YY5-nm-ag7" secondAttribute="leading" constant="16" id="QFd-Uz-qKe"/>
+                            <constraint firstItem="hnL-cU-zIN" firstAttribute="leading" secondItem="YY5-nm-ag7" secondAttribute="leading" constant="16" id="SRx-eE-5AT"/>
+                            <constraint firstItem="d31-sI-QgE" firstAttribute="top" secondItem="YY5-nm-ag7" secondAttribute="top" constant="25" id="X3B-Di-WqU"/>
+                            <constraint firstItem="hnL-cU-zIN" firstAttribute="top" secondItem="d31-sI-QgE" secondAttribute="bottom" constant="16" id="XDJ-do-M8M"/>
+                            <constraint firstItem="YY5-nm-ag7" firstAttribute="trailing" secondItem="d31-sI-QgE" secondAttribute="trailing" constant="16" id="rGT-4g-0Be"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YY5-nm-ag7"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="hnL-cU-zIN" id="Nrx-dk-hHY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMg-LV-4nG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601.25" y="47.535211267605632"/>
+            <point key="canvasLocation" x="1606.875" y="25.35211267605634"/>
         </scene>
     </scenes>
     <resources>
