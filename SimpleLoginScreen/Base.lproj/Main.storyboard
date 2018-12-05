@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="52.5" y="26.408450704225352"/>
         </scene>
-        <!--View Controller-->
+        <!--Reset Pass View Controller-->
         <scene sceneID="2nu-Hm-bY7">
             <objects>
-                <viewController id="FFl-pf-Xpg" sceneMemberID="viewController">
+                <viewController id="FFl-pf-Xpg" customClass="ResetPassViewController" customModule="SimpleLoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jbJ-zN-Ao6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMg-LV-4nG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1606.875" y="25.35211267605634"/>
+            <point key="canvasLocation" x="1806" y="26"/>
         </scene>
     </scenes>
     <resources>
