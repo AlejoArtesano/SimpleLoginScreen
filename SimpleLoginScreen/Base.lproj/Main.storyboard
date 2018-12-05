@@ -289,6 +289,9 @@
                                         <state key="normal" title="SIGN UP">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="dcQ-5p-l2e" kind="show" id="GRj-eI-6bJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -369,11 +372,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMg-LV-4nG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1806" y="26"/>
+            <point key="canvasLocation" x="1796" y="53"/>
         </scene>
     </scenes>
     <resources>
         <image name="spinning-space-vortex-warp-tunnel-background-free-thumb49" width="800" height="600"/>
         <image name="umbrellacorp" width="238" height="212"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GRj-eI-6bJ"/>
+    </inferredMetricsTieBreakers>
 </document>
