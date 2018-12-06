@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex-warp-tunnel-background-free-thumb49" translatesAutoresizingMaskIntoConstraints="NO" id="1im-lV-u0N">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex" translatesAutoresizingMaskIntoConstraints="NO" id="1im-lV-u0N">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -126,7 +126,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex-warp-tunnel-background-free-thumb49" translatesAutoresizingMaskIntoConstraints="NO" id="Nig-bR-Py8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex" translatesAutoresizingMaskIntoConstraints="NO" id="Nig-bR-Py8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -223,7 +223,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex-warp-tunnel-background-free-thumb49" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-yn-N0K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-yn-N0K">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -329,7 +329,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex-warp-tunnel-background-free-thumb49" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-tl-NWx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinning-space-vortex" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-tl-NWx">
                                 <rect key="frame" x="0.0" y="0.0" width="327" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -382,7 +382,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="spinning-space-vortex-warp-tunnel-background-free-thumb49" width="800" height="600"/>
+        <image name="spinning-space-vortex" width="501" height="598"/>
         <image name="umbrellacorp" width="238" height="212"/>
     </resources>
     <inferredMetricsTieBreakers>
