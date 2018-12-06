@@ -25,7 +25,6 @@ class MainViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         SignInButtonPressed?.isEnabled = false
-        //SignInButtonPressed?.alpha = 0.5
         
     }
     
