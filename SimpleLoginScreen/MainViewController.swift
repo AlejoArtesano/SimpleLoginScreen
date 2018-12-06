@@ -19,8 +19,19 @@ class MainViewController: UIViewController {
     
     @IBAction func signinButtonPressed(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "welcomeSegue", sender: nil)
+        guard let usernameTextField = usernameTextField.text else { return }
+        guard let passwordTextField = passwordTextField.text else { return }
         
+        if !usernameTextField.isEmpty && !passwordTextField.isEmpty {
+            
+            performSegue(withIdentifier: "welcomeSegue", sender: nil)
+        
+        }
+        else {
+            
+            //TODO: - Add Alert Notifications
+            
+        }
     }
     
     
