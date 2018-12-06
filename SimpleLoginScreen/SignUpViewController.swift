@@ -13,10 +13,9 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var signupNameTextField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     
@@ -25,6 +24,7 @@ class SignUpViewController: UIViewController {
             guard let destinationVC = segue.destination as? WelcomeViewController else { return }
             destinationVC.text = signupNameTextField.text
         }
-    
+        
     }
 }
+    
