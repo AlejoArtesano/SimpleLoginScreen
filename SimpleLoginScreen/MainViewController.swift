@@ -24,18 +24,19 @@ class MainViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SignInButtonPressed?.isEnabled = false
+        //SignInButtonPressed?.isEnabled = false
         
     }
     
     // Only segue to WelcomeViewController has identifier
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier != nil {
-        let destinationVC = segue.destination as! WelcomeViewController
-        destinationVC.text = (usernameTextField?.text)!
+        if segue.identifier == "welcomeSegue" {
+        guard let destinationVC = segue.destination as? WelcomeViewController else { return }
+        destinationVC.text = usernameTextField.text
         }
         
     }
+    
 
 }
 

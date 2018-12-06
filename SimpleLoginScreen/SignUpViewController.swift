@@ -21,9 +21,9 @@ class SignUpViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier != nil {
-            let destinationVC = segue.destination as! WelcomeViewController
-            destinationVC.text = (signupNameTextField?.text)!
+        if segue.identifier == "welcomeSegue" {
+            guard let destinationVC = segue.destination as? WelcomeViewController else { return }
+            destinationVC.text = signupNameTextField.text
         }
     
     }
