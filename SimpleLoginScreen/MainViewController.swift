@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITextViewDelegate {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     
