@@ -12,22 +12,28 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var SignInButtonPressed: UIButton!
+    @IBOutlet weak var signinButton: UIButton!
     
-    @IBAction func UnwindFromVC(unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwindFromVC(unwindSegue: UIStoryboardSegue) {
     }
+    
+    @IBAction func signinButtonPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "welcomeSegue", sender: nil)
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    // Only segue to WelcomeViewController has identifier
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "welcomeSegue" {
-            guard let destinationVC = segue.destination as? WelcomeViewController else { return }
-            destinationVC.text = usernameTextField.text
-        }
+        
+        guard let destinationVC = segue.destination as? WelcomeViewController else { return }
+        destinationVC.text = usernameTextField.text
         
     }
     

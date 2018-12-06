@@ -57,7 +57,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="dcQ-5p-l2e" kind="show" identifier="welcomeSegue" id="6ou-pa-8U1"/>
+                                            <action selector="signinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nu7-Lb-tkS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -108,9 +108,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="SignInButtonPressed" destination="BI7-pG-Mx1" id="d0T-x7-NBW"/>
                         <outlet property="passwordTextField" destination="9t5-xG-R3l" id="N3t-tf-NBA"/>
+                        <outlet property="signinButton" destination="BI7-pG-Mx1" id="SHN-1O-LPE"/>
                         <outlet property="usernameTextField" destination="MEa-I1-I7O" id="rEF-Nf-vZ3"/>
+                        <segue destination="dcQ-5p-l2e" kind="show" identifier="welcomeSegue" id="LDD-GA-t6t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -154,7 +155,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nz9-Vu-dO3" kind="unwind" unwindAction="UnwindFromVCWithUnwindSegue:" id="Eef-v5-rWR"/>
+                                    <segue destination="nz9-Vu-dO3" kind="unwind" unwindAction="unwindFromVCWithUnwindSegue:" id="xcr-mH-hnU"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yhq-zg-6sZ">
@@ -251,7 +252,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="I4y-VI-8zy" kind="unwind" unwindAction="UnwindFromVCWithUnwindSegue:" id="Hgo-y7-RYc"/>
+                                    <segue destination="I4y-VI-8zy" kind="unwind" unwindAction="unwindFromVCWithUnwindSegue:" id="Ghr-zV-Br8"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nNF-hu-HF7">
@@ -292,7 +293,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="dcQ-5p-l2e" kind="show" identifier="welcomeSegue" id="GRj-eI-6bJ"/>
+                                            <segue destination="dcQ-5p-l2e" kind="show" id="5hg-vB-6bJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -385,6 +386,6 @@
         <image name="umbrellacorp" width="238" height="212"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6ou-pa-8U1"/>
+        <segue reference="LDD-GA-t6t"/>
     </inferredMetricsTieBreakers>
 </document>

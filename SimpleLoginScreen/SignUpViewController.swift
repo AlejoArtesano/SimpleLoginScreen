@@ -9,7 +9,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
     
     @IBOutlet weak var signupNameTextField: UITextField!
     
@@ -20,11 +20,10 @@ class SignUpViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "welcomeSegue" {
-            guard let destinationVC = segue.destination as? WelcomeViewController else { return }
-            destinationVC.text = signupNameTextField.text
-        }
+        
+        guard let destinationVC = segue.destination as? WelcomeViewController else { return }
+        destinationVC.text = signupNameTextField.text
         
     }
 }
-    
+
