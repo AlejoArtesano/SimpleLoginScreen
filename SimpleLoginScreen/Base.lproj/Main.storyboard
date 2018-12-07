@@ -85,7 +85,7 @@
                                     <segue destination="AWb-lR-m8f" kind="show" id="cSa-vv-ogr"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrellacorp" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-aj-rwt">
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roman-Security-Services-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-aj-rwt">
                                 <rect key="frame" x="95" y="95" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Efg-3b-JpC"/>
@@ -146,12 +146,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HG8-hc-q3L">
-                                <rect key="frame" x="16" y="32" width="36" height="29"/>
+                                <rect key="frame" x="16" y="32" width="50" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="z38-KM-bD1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -243,12 +243,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-GU-JFl">
-                                <rect key="frame" x="16" y="29" width="36" height="29"/>
+                                <rect key="frame" x="16" y="29" width="50" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="LIw-Lq-3F7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -382,10 +382,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Roman-Security-Services-Logo" width="600" height="600"/>
         <image name="spinning-space-vortex" width="501" height="598"/>
-        <image name="umbrellacorp" width="238" height="212"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5hg-vB-6bJ"/>
+        <segue reference="LDD-GA-t6t"/>
     </inferredMetricsTieBreakers>
 </document>
